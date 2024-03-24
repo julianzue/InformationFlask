@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Information</h2>
+    </header>
+
+    <section>
+        <article>
+            <div class="head flex">
+                <p>List</p>
+                <a href="/add" class="add">+</a>
+            </div>
+            <div class="body list">
+                {% for info in infos %}
+                    <a href="/info/{{ info.name }}">
+                        <div class="info">
+                            <p>{{ info.name }}</p>
+                            <form method="post">
+                                <input type="hidden" name="filename" value="{{ info.name }}">
+                                <input type="submit" value="X" class="delete" name="delete">
+                            </form>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #333;
+}
+
+header{
+    background: #222;
+    padding: 20px;
+    color: white;
+}
+
+section{
+    max-width: 800px;
+    margin: auto;
+}
+
+article{
+    margin: 50px;
+    background: #555;
+}
+
+article .head{
+    padding: 20px;
+    background: orange;
+    color: black;
+}
+
+article .head.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+article .head .add{
+    padding: 3px;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+article .body{
+    padding: 20px;
+}
+
+article .body a{
+    text-decoration: none;
+}
+
+article .body .info{
+    color:  white;
+    background: #444;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .body .info .delete{
+    padding: 10px;
+    background: darkred;
+    color: white;
+    border: none;
+}
+
+article .body.list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+/* ADD */
+
+.add-form p{
+    color: white;
+}
+
+.add-form input[type="text"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.add-form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.add-form input[type="submit"]{
+    padding: 10px;
+    background: orange;
+    border: none;
+}
